@@ -19,6 +19,13 @@ export const addTodo = (text) => {
   };
 };
 
+export const addTodos = (todos) => {
+  return {
+    type: 'ADD_TODOS',
+    todos
+  };
+};
+
 // toggleTodo(id) TOGGLE_TODO
 export const toggleTodo = (id) => {
   return {
