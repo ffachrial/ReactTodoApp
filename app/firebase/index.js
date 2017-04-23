@@ -3,12 +3,10 @@ import firebase from 'firebase';
 try {
   // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyA5mGyehqY0e_2ZVtl59h2_VwOdeiRZ11M",
-      authDomain: "fachrial-todo-app.firebaseapp.com",
-      databaseURL: "https://fachrial-todo-app.firebaseio.com",
-      projectId: "fachrial-todo-app",
-      storageBucket: "fachrial-todo-app.appspot.com",
-      messagingSenderId: "1066448799960"
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      databaseURL: process.env.DATABASE_URL,
+      storageBucket: process.env.STORAGE_BUCKET
     };
 
     firebase.initializeApp(config);
